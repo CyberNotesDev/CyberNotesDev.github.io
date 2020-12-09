@@ -1,0 +1,128 @@
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+header {
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.specialty {
+    color: red;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+/* Skills */
+
+.skill-container {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.skill-container .skill-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-container .skill-box .skill-set {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 1px black;
+    width: 175px;
+    height: 150px;
+}
+
+.skill-container .skill-box .skill-set .skill-percentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.skill-container .skill-box .skill-set .skill-lang {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
+}
+
+/* Projects */
+
+.projects-container {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.projects-container .projects-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects-container .projects-box .prj {
+    background-color: linen;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 275px;
+    box-shadow: 5px 1px lightgray;
+}
+
+.projects-container .projects-box .prj a:hover {
+    text-decoration: none;
+}
+
+/* Resume */
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.resume-container .resume-box {
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 75px;
+}
+
+.resume-container .resume-box a {
+    text-decoration: none;
+}
