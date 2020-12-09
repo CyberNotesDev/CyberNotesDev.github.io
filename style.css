@@ -99,8 +99,12 @@ footer {
     box-shadow: 5px 1px lightgray;
 }
 
-.projects-container .projects-box .prj a:hover {
+.projects-container .projects-box .prj a {
     text-decoration: none;
+}
+
+.projects-container .projects-box .prj a:hover {
+    text-decoration: underline;
 }
 
 /* Resume */
