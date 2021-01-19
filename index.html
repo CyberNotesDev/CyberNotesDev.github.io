@@ -5,91 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex, nofollow">
-    <meta name="description" content="This is my Portfolio! My name is Elijah Littell-Sivley. My internet name is CyberNotesDev or SpaceLess. I'm from Portage, Michigan, I program in C++, Python, and JavaScript. My favorite subjects are Math, and Science or the STEM field. I want to be a Entrepreneur in technology when I grow older or if that does not work out then a Astrophysicist!">
+    <meta name="description" content="This is my Portfolio! My name is Elijah Littell-Sivley. My internet name is CyberNotesDev or SpaceLess. I'm from Portage, Michigan, I program in C++, Python, and JavaScript. My favorite subjects are Math, and Science or the STEM field.">
     <meta name="author" content="Elijah Lee Littell-Sivley">
     <link rel="stylesheet" href="style.css">
     <title>Elijah Littell-Sivley | Portfolio - CyberNotesDev</title>
 </head>
 <body>
-    <!-- Header -->
-    <a href="./contact.html">Contact</a>
-    <!-- Main -->
     <main>
         <!-- Description -->
-        <div class="description">
-            <p>Hi! My name is Elijah Littell-Sivley, I'm 16 year old and I reside in Portage, Michigan. I am a <span class="specialty">Front-End Developer</span> trying to learn Backend and I want to be a great <span class="specialty">FullStack Developer!</span> I know HTML, <span>CSS</span>, JavaScript, C++, and Python. You can take a look around if you would like!</p>
+        <div class="description-container">
+            <div class="description">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam cum odio praesentium fugit explicabo maiores eligendi iste ducimus expedita dolorem. Id, aliquam possimus? Consequatur, quasi nesciunt? Quasi doloremque esse eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veniam temporibus tempore error atque officiis, itaque facilis sed excepturi deleniti reiciendis magni asperiores consectetur quaerat repellat ullam! Provident, beatae odit?</p>
+            </div>
         </div>
         <!-- Skill -->
-        <div class="skill-container">
-            <div class="skill-box">
-                <!-- HTML/CSS -->
-                <div class="skill-set">
-                    <div class="skill-lang">
-                        HTML/CSS
-                    </div>
-                    <div class="skill-percentage">
-                        60%
-                    </div>
-                </div>
-                <!-- JavaScript -->
-                <div class="skill-set">
-                    <div class="skill-lang">
-                        JavaScript
-                    </div>
-                    <div class="skill-percentage">
-                        55%
-                    </div>
-                </div>
-                <!-- C++ -->
-                <div class="skill-set">
-                    <div class="skill-lang">
-                        C++
-                    </div>
-                    <div class="skill-percentage">
-                        40%
-                    </div>
-                </div>
-                <!-- Python -->
-                <div class="skill-set">
-                    <div class="skill-lang">
-                        Python
-                    </div>
-                    <div class="skill-percentage">
-                        65%
-                    </div>
-                </div>
+        <div class="skills-container">
+            <div class="skills">
+                HTML (55%)
+                CSS (50%)
+                JavaScript (45%)
+                Python (40%)
+                C++ (20%)
+                Linux (15%)
+                Premiere Pro (Beginner)
+                Photoshop (Beginner)
+                Design (Shit)
             </div>
         </div>
         <!-- Projects -->
         <div class="projects-container">
-            <div class="projects-box">
-                <div class="prj">
-                    <a href="#">Blog Website</a>
+            <h2>Projects! ;)</h2>
+            <div class="projects">
+                <div class="project-box" id="prj1" title="Go to Website!?">
+                    <h2>Coding Club</h2>
                 </div>
-                <div class="prj">
-                    <a href="#">Coding Club Website</a>
+                <div class="project-box" id="prj2" title="Go to Blog!?">
+                    <h2>Blog</h2>
                 </div>
-                <div class="prj">
-                    <a href="#">Ex3</a>
+                <div class="project-box" id="prj3" title="Go to Other!?">
+                    <h2>Other</h2>
                 </div>
-            </div>
-            <div class="button-div">
-                <button>See More</button>
             </div>
         </div>
         <!-- Resume -->
         <div class="resume-container">
-            <div class="resume-box">
-                <a href="https://docs.google.com/document/d/1KseE4Cf0wpaSjiMn9bsRthGEVWOcORwes1eaO8mE0CU/edit#">Resume</a>
-            </div>
+            <div class="resume"></div>
         </div>
     </main>
-    <!-- Footer -->
     <footer>&copy; Elijah LLS - <span id="year"></span></footer>
-    <!-- Javascript -->
     <script>
         let year = new Date().getFullYear();
         document.getElementById("year").innerHTML = year;
     </script>
+    <script src="Js/hoverProjects.js"></script>
 </body>
 </html>
