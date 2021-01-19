@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: springgreen;
+    background-color: snow;
 }
 
 main {
@@ -23,15 +23,30 @@ main {
 /* Skills */
 
 main .skills-container {
-    background-color: blue;
     margin-bottom: 100px;
+}
+
+main .skills-container .skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .skills-container .skills .skill {
+    display: flex;
+    justify-self: right;
+    align-items: center;
+    background-color: steelblue;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }
 
 /* Projects */
 
-main .projects-container {
-    background-color: blue;
-    padding: 10px;
+.title {
+    text-align: center;
+    border-bottom: 4px solid black;
+    margin-bottom: 10px;
 }
 
 main .projects-container .projects {
@@ -49,6 +64,7 @@ main .projects-container .projects .project-box {
     height: 300px;
     width: 15%;
     border-radius: 10px;
+    box-shadow: 5px 3px 10px black;
 }
 
 main .projects-container .projects .activate {
@@ -86,4 +102,9 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+    position: relative;
+}
+
+footer a, footer a:visited {
+    color: purple;
 }
