@@ -16,29 +16,47 @@ body {
 
 main {
     font-size: 20px;
-    height: 1500px;
     padding: 10px;
+}
+
+/* Description */
+
+main .description-container {
+    margin-bottom: 10px;
 }
 
 /* Skills */
 
 main .skills-container {
-    margin-bottom: 100px;
+    color: black;
+    position: relative;
+    margin-bottom: 10px;
+    height: 220px;
 }
 
 main .skills-container .skills {
     display: flex;
+    padding: 10px;
     justify-content: space-around;
 }
 
 main .skills-container .skills .skill {
     display: flex;
-    justify-self: right;
+    justify-content: center;
     align-items: center;
     background-color: steelblue;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+main .skills-container .skills .skill .adjust {
+    position: absolute;
+    bottom: 12px;
+}
+
+main .skills-container .skills .gone {
+    display: none;
 }
 
 /* Projects */
