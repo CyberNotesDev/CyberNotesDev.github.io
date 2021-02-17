@@ -26,7 +26,7 @@ a.back-button {
 }
 a.back-button:focus {border: 3px solid black;}
 a.back-button:hover {transform: scale(1.1);}
-a.back-button:active {color: black;}
+a.back-button:active, a.back-button:visited {color: black;}
 
 .links {
     padding: 10px; 
