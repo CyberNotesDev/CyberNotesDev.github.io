@@ -14,7 +14,32 @@ body {
     overflow: hidden;
 }
 
-.back-button {
+.design-top-left {
+    background-color: turquoise;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -10px;
+    left: -60px;
+    top: -90px;
+    width: 200px;
+    height: 200px;
+}
+
+.design-top-right {
+    background-color: turquoise;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -10px;
+    right: -60px;
+    top: -90px;
+    width: 200px;
+    height: 200px;
+}
+
+/* .back-button {
+    background: lightgray;
     position: absolute;
     top: 15px;
     left: 15px;
@@ -24,10 +49,9 @@ body {
     text-decoration: none;
     user-select: none;
     border: 1px solid black;
-    background: lightgray;
 }
 .back-button:focus {border: 3px solid black;}
-.back-button:active, .back-button:visited {color: black;}
+.back-button:active, .back-button:visited {color: black;} */
 
 .links {
     padding: 10px; 
@@ -49,18 +73,19 @@ body {
     justify-content: center;
 }
 
-.labels {
-    background-color: beige;
-}
-
 .labels input {
     margin-right: 20px;
+    border: 2px solid black;
 }
 .label input:last-child {margin-right: none;}
 
 input, textarea {
     border-radius: 8px;
     padding: 3px;
+}
+
+textarea {
+    border: 3px solid black;
 }
 
 input:focus, textarea:focus {
@@ -72,11 +97,17 @@ div #msg {
 }
 
 button {
-    background: lightgray;
+    background-color: lightgray;
     padding: 3px;
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
+}
+
+.back-and-submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .design-bottom-left {
@@ -84,10 +115,10 @@ button {
     display: inline-block;
     width: 800px;
     height: 800px;
-    position: relative;
+    position: absolute;
     z-index: 10;
-    top: 400px;
-    right: 250px;
+    bottom: -600px;
+    left: -300px;
     transform: rotate(25deg);
 }
 
@@ -96,9 +127,9 @@ button {
     display: inline-block;
     width: 800px;
     height: 800px;
-    position: relative;
+    position: absolute;
     z-index: 10;
-    top: 400px;
-    left: 750px;
+    bottom: -600px;
+    right: -300px;
     transform: rotate(-25deg);
 }
