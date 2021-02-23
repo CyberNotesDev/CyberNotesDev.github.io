@@ -1,3 +1,35 @@
+@media only screen and (max-height: 640px), (max-width: 640px) { 
+    body {
+        width: 100%;
+    }
+
+    .links {
+        background-color: beige;
+        width: inherit;
+        padding: 10px; 
+        text-align: center;
+    }
+
+    .design-random-bubble {
+        visibility: hidden;
+    }
+
+    .design-top-left {
+        visibility: hidden;
+    }
+    .design-top-right {
+        visibility: hidden;
+    }
+
+    .design-bottom-left {
+       visibility: hidden;
+    }
+    
+    .design-bottom-right {
+        visibility: hidden;
+    }
+}
+
 /* My color scheme Dark Blue, Turquoise, Beige */
 
 * {
@@ -54,8 +86,15 @@ body {
 }
 
 .form-wrapper { 
+    width: 100%;
+    height: 600px;
+}
+
+form {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: inherit;
 }
 
 .labels input {
@@ -97,6 +136,25 @@ div #msg {
     justify-content: space-between;
     align-items: center;
     user-select: none;
+}
+
+.design-random-bubble {
+    background-color: beige;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    z-index: -10;
+}
+
+.bubble-one {
+    left: 620px;
+    top: 450px;
+}
+
+.bubble-two {
+    right: 620px;
+    top: 450px;
 }
 
 .design-bottom-left {
