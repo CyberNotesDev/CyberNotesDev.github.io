@@ -123,6 +123,9 @@ div #msg {
 .back-button {
     text-decoration: none;
 }
+.back-button:hover {
+    text-decoration: underline;
+}
 
 .submit-button {
     background-color: lightgray;
