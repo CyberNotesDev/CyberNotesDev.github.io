@@ -6,8 +6,33 @@
     padding: 0;
 }
 
+/* ::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
 body {
     background-color: snow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 main {
@@ -21,9 +46,15 @@ main .description-container {
     margin-bottom: 10px;
 }
 
+main .description-container .description {
+    font-size: 22px;
+    min-width: 100px;
+}
+
 /* Skills */
 
 main .skills-container {
+    background-color: blue;
     color: black;
     position: relative;
     margin-bottom: 10px;
