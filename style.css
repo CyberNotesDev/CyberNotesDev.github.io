@@ -1,3 +1,52 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightblue;
+    padding: 15px;
+}
+
+main {
+    background-color: rgb(132, 255, 255);
+    margin: 15px 0;
+    padding: 15px;
+}
+
+footer {
+    background-color: lightblue;
+    display: flex;
+
+    padding: 15px;
+    height: 85px;
+}
+
+footer p {
+    width: 40%;
+    height: inherit;
+    font-weight: bold;
+}
+
+footer section {
+    width: 60%;
+    height: inherit;
+}
+
+footer section h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+footer .contact-links a {
+    text-decoration: none;
+}
+
+footer .contact-links a:hover {
+    text-decoration: underline;
+}
+
+footer .contact-links a:nth-child(even) {
+    margin: 0 10px;
 }
