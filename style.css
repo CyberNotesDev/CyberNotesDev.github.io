@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family: 'Albert Sans', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+h1,h2 {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.125em;
 }
 
 header {
@@ -13,6 +19,15 @@ main {
     background-color: rgb(132, 255, 255);
     margin: 15px 0;
     padding: 15px;
+}
+
+main #About {
+    margin-bottom: 25px;
+}
+
+main #Projects article {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 footer {
@@ -41,6 +56,10 @@ footer section h4 {
 
 footer .contact-links a {
     text-decoration: none;
+}
+
+footer .contact-links a:first-child {
+    margin-left: 5px;
 }
 
 footer .contact-links a:hover {
