@@ -11,18 +11,57 @@ h1,h2 {
 }
 
 header {
-    background-color: lightblue;
     padding: 15px;
 }
 
 main {
-    background-color: rgb(132, 255, 255);
     margin: 15px 0;
     padding: 15px;
 }
 
 main #About {
+    display: flex;
+    flex-direction: row;
+    
     margin-bottom: 25px;
+    height: 600px;
+    width: 100%;
+}
+
+main #About figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    overflow: hidden;
+    flex: 1 1 40%;
+}
+
+main #About figure img {
+    width: 60%;
+    height: 100%;
+}
+
+main #About div {
+    padding: 10px;
+    flex: 1 1 60%;
+}
+
+main #About div h2 {
+    margin: 15px 0;
+}
+
+main #About div p {
+    font-size: 1.125rem;
+    text-indent: 0.75rem;
+    text-align: justify;
+    letter-spacing: 0.075em;
+    word-spacing: -0.035em;
+}
+
+main #Projects {
+    height: 350px;
 }
 
 main #Projects article {
@@ -40,13 +79,13 @@ footer {
 
 footer p {
     width: 40%;
-    height: inherit;
+    height: auto;
     font-weight: bold;
 }
 
 footer section {
     width: 60%;
-    height: inherit;
+    height: auto;
 }
 
 footer section h4 {
