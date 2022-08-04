@@ -10,9 +10,29 @@ h1,h2 {
     letter-spacing: 0.125em;
 }
 
+/* Header */
+
 header {
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1em;
 }
+
+header h1 {
+    width: 40%;
+}
+
+header nav {
+    width: 50%;
+    align-self: center;
+}
+
+header nav a:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* Main */
 
 main {
     margin: 15px 0;
@@ -39,7 +59,6 @@ main #About figure {
 }
 
 main #About figure img {
-    width: 60%;
     height: 100%;
 }
 
@@ -72,9 +91,9 @@ main #Projects article {
 footer {
     background-color: lightblue;
     display: flex;
+    justify-content: space-between;
 
     padding: 15px;
-    height: 85px;
 }
 
 footer p {
@@ -97,14 +116,26 @@ footer .contact-links a {
     text-decoration: none;
 }
 
-footer .contact-links a:first-child {
-    margin-left: 5px;
-}
-
 footer .contact-links a:hover {
     text-decoration: underline;
 }
 
 footer .contact-links a:nth-child(even) {
     margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer h4 {
+        display: none;
+    }
 }
