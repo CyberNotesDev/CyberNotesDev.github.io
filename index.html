@@ -1,67 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I just love to learning new things!">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I just love to learn new things!"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
     <title>Elijah Littell-Sivleys' Portfolio</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <h1>Hello</h1>
-        <nav>
-            <a href="#Projects">Projects</a>
-            <a href="#About">About</a>
-        </nav>
+  <body>
+    <header class="header">
+      <h1 class="title">Welcome</h1>
     </header>
-    <main>
-        <section id="About">
-            <figure>
-                <img src="images/test.jpg" alt="Elijah Littell-Sivley">
-            </figure>
-            <div>
-                <h2>About</h2>
-                <p>Welcome to my page. My name is Elijah and I'm 17 years old. I love pretty much everything involving Math, Science, and Computer Technology. I know how to Photoshop, Premeiere pro, HTML, CSS, JS, MERN, and C++</p>
-                <p>My goal is to become very good and effecient at what I do. That involves making websites, to programming and even editing videos/photos.</p>
-                <p>I like to play video games with friends, watch anime, and going snowboarding in the winter time!</p>
-            </div>
-        </section>
-        <section id="Projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>Websites</h3>
-                <p>Here are the websites I've done</p>
-            </article>
-            <article>
-                <h3>Photoshop</h3>
-                <p>Here are the photoshop projects I've done</p>
-            </article>
-            <article>
-                <h3>Premeiere Pro</h3>
-                <p>Here are the Premeiere pro projects I've done</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p><span id="year"></span> &copy; CyberNotesDev</p>
-        <section>
-            <h4>Contact me:</h4>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/">linkedin</a>
-                <a href="https://github.com/CyberNotesDev">Github</a>
-                <a href="https://instagram.com/CyberNotesDev">Instagram</a>
-            </div>
-        </section>
-    </footer>
-</body>
-<script src="js/year.js"></script>
+    <main class="main">
+      <section class="main-section">
+        <article class="about">
+          <h2 class="about-title title">About</h2>
+          <p class="about-text">
+            Welcome to my page. My name is Elijah I'm 17 years old. I love
+            pretty much everything involving Math, Science, and Computer
+            Technology. I know how to use Photoshop, Premeiere pro, HTML, CSS,
+            JS, MERN, and C++.
+          </p>
+          <p class="about-text">
+            My goal is to become very good and effecient at what I do. That
+            involves making websites, to programming and even editing
+            photos/videos. In my free time I like to play video games, watch
+            anime, and going snowboarding. My favorite game is Overwatch, and my
+            favorite anime is Naruto!
+          </p>
+          <figure>
+            <img src="./images/overwatch.jpg" alt="Overwatch" />
+            <img src="./images/naruto.jpg" alt="Naruto" />
+          </figure>
+        </article>
+      </section>
 
+      <section class="main-projects">
+        <h2 class="about-title title">Projects</h2>
+        <div class="projects-wrapper">
+          <article class="projects">
+            <figure class="project-container">
+              <img
+                class="project-image"
+                src="./images/spotify-clone.png"
+                alt="Spotify Clone Project"
+              />
+              <figcaption class="project-text">
+                <p>
+                  This is my
+                  <a href="https://CyberNotesDev.github.io/spotify-clone"
+                    >Spotify Clone</a
+                  >
+                  made in React.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="foot">
+      <p>
+        <span class="copyright">©</span> <span id="year"></span>
+        <span class="title">CyberNotesDev</span>
+      </p>
+      <section class="foot-section">
+        <h4 class="contact-title title">Contact me:</h4>
+        <div class="contact-links">
+          <a
+            class="foot-links"
+            href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/"
+            >linkedin</a
+          >
+          <a class="foot-links" href="https://github.com/CyberNotesDev"
+            >Github</a
+          >
+          <a class="foot-links" href="https://instagram.com/CyberNotesDev"
+            >Instagram</a
+          >
+          <a class="foot-links" href="mailto:elittell214@gmail.com">Email</a>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="js/year.js"></script>
 </html>
