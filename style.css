@@ -26,7 +26,17 @@ p {
 
 .header {
   box-shadow: 0 2px 4px black;
+  text-align: center;
   padding: 1rem;
+}
+
+.header h1 {
+  font-size: 1.25rem;
+}
+
+.header h1 span {
+  color: #aed6dc;
+  font-weight: 400;
 }
 
 /* 
@@ -74,44 +84,66 @@ figure {
   margin-top: 1rem;
 }
 
-.projects-wrapper {
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1025px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 3px 1px 3px #aed6dc;
+}
+
+.project:hover {
+  background-color: #5f6a89;
+  box-shadow: none;
+}
+
+.project-details {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
-  gap: 1rem;
-}
-
-.project-container {
-  border-radius: 3px;
-  box-shadow: 3px 2px 3px black;
-  width: 325px;
-  height: 250px;
-}
-
-.project-container:hover {
-  background-color: #404c6d;
-  transform: scale(1.01);
+  flex-flow: row;
 }
 
 .project-image {
-  border-bottom: 2px solid black;
-  padding: 5px;
   width: 100%;
+  max-width: 425px;
 }
 
 .project-text {
-  display: flex;
-  align-items: center;
-
   width: 100%;
-  height: inherit;
-  padding: 0.5rem;
+  text-align: center;
 }
 
-.projects figcaption a {
+.project-text > p {
+  margin-bottom: 0.5rem;
+}
+
+.project-text a {
   color: #aed6dc;
   text-decoration: none;
+}
+
+.project-text a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 925px) {
+  .project-details {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin-bottom: 1rem;
+  }
 }
 
 /* 
@@ -121,20 +153,23 @@ figure {
 */
 
 .foot {
-  display: flex;
-  justify-content: space-between;
-
   padding: 1rem;
 }
 
+.foot-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+
+  width: 75%;
+}
+
 .foot p {
-  width: 40%;
   height: auto;
   font-weight: bold;
 }
 
 .foot-section {
-  width: 60%;
   height: auto;
 }
 
@@ -156,8 +191,8 @@ figure {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .foot {
+@media screen and (max-width: 650px) {
+  .foot-container {
     flex-direction: column;
     align-items: center;
   }
