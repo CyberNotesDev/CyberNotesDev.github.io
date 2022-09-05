@@ -104,7 +104,7 @@ figure {
   max-width: 1025px;
   margin-bottom: 2rem;
   padding: 1rem;
-  box-shadow: 3px 1px 3px #aed6dc;
+  box-shadow: 8px 6px 6px #aed6dc;
 }
 
 .project:hover {
