@@ -30,13 +30,19 @@ p {
   padding: 1rem;
 }
 
-.header h1 {
+.header .title {
   font-size: 1.25rem;
 }
 
-.header h1 span {
+.header .title span {
   color: #aed6dc;
   font-weight: 400;
+}
+
+@media screen and (max-width: 450px) {
+  .header .title span {
+    display: none;
+  }
 }
 
 /* 
@@ -60,6 +66,7 @@ p {
   max-width: 1000px;
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
+  text-align: center;
 }
 
 figure {
