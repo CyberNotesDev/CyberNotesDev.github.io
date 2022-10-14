@@ -92,12 +92,12 @@ figure {
 }
 
 .project {
-  border-radius: 10px;
+  border-radius: 42px;
   width: 100%;
   max-width: 1025px;
   margin-bottom: 2rem;
-  padding: 1rem;
-  box-shadow: 3px 1px 3px #aed6dc;
+  padding: 2rem;
+  box-shadow: 4px 2px 0px 0px #aed6dc;
 }
 
 .project:hover {
