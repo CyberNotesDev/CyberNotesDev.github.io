@@ -30,13 +30,19 @@ p {
   padding: 1rem;
 }
 
-.header h1 {
+.header .title {
   font-size: 1.25rem;
 }
 
-.header h1 span {
+.header .title span {
   color: #aed6dc;
   font-weight: 400;
+}
+
+@media screen and (max-width: 450px) {
+  .header .title span {
+    display: none;
+  }
 }
 
 /* 
@@ -60,6 +66,7 @@ p {
   max-width: 1000px;
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
+  text-align: center;
 }
 
 figure {
@@ -86,15 +93,15 @@ figure {
 
 .project-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
 .project {
   border-radius: 42px;
   width: 100%;
-  max-width: 1025px;
+  max-width: 725px;
   margin-bottom: 2rem;
   padding: 2rem;
   box-shadow: 4px 2px 0px 0px #aed6dc;
@@ -107,10 +114,11 @@ figure {
 
 .project-details {
   display: flex;
+  flex-flow: column;
+
   justify-content: flex-start;
   align-items: center;
 
-  flex-flow: row;
 }
 
 .project-image {
@@ -119,6 +127,7 @@ figure {
 }
 
 .project-text {
+  margin-top: 2rem;
   width: 100%;
   text-align: center;
 }
