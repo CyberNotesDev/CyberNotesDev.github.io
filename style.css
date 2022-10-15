@@ -93,15 +93,15 @@ figure {
 
 .project-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
 .project {
   border-radius: 10px;
   width: 100%;
-  max-width: 1025px;
+  max-width: 725px;
   margin-bottom: 2rem;
   padding: 1rem;
   box-shadow: 8px 6px 6px #aed6dc;
@@ -114,10 +114,11 @@ figure {
 
 .project-details {
   display: flex;
+  flex-flow: column;
+
   justify-content: flex-start;
   align-items: center;
 
-  flex-flow: row;
 }
 
 .project-image {
@@ -126,6 +127,7 @@ figure {
 }
 
 .project-text {
+  margin-top: 2rem;
   width: 100%;
   text-align: center;
 }
