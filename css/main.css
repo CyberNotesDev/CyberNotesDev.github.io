@@ -1,0 +1,147 @@
+/* 
+=============
+  Main 
+=============
+*/
+
+.main {
+  padding: 2rem;
+}
+.section-title {
+  color: #ff9a8d;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  margin: 0 auto 0.75rem;
+  width: 100%;
+  max-width: 1000px;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section figure img {
+  margin-bottom: 1rem;
+  width: 95%;
+  max-width: 575px;
+}
+
+/* 
+  =============
+    Projects
+  =============
+*/
+
+.main-projects {
+  margin-top: 1rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project {
+  border-radius: 42px;
+  width: 100%;
+  max-width: 725px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  box-shadow: 4px 2px 0px 0px #aed6dc;
+}
+
+.project:hover {
+  background-color: #5f6a89;
+  box-shadow: none;
+}
+
+.project-details {
+  display: flex;
+  flex-flow: column;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 425px;
+}
+
+.project-text {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.project-text > p {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 925px) {
+  .project-details {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin-bottom: 1rem;
+  }
+}
+
+/* 
+  ==================
+    Certifications
+  ==================
+*/
+
+.specific-certifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+details {
+  border: 2px #aed6dc solid;
+  border-radius: 0.5rem;
+  color: white;
+  width: 250px;
+
+  margin-bottom: 1rem;
+}
+
+details > summary::marker {
+  color: #ff9a8d;
+}
+
+details[open] {
+  width: 400px;
+  height: auto;
+}
+
+details > summary {
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+details[open] > summary {
+  border-bottom: 2px #aed6dc solid;
+}
+
+details[open] > p {
+  width: inherit;
+  height: auot;
+  padding: 0.5rem;
+}
