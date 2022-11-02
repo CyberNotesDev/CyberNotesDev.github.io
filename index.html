@@ -8,7 +8,9 @@
       name="description"
       content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I just love to learn new things!"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/other.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,35 +21,42 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header">
       <h1 class="title">
         Elijah Littell-Sivley <span> - Junior Developer</span>
       </h1>
     </header>
 
+    <!-- Main Content -->
     <main class="main">
-      <section class="main-section">
-        <article class="about">
-          <h2 class="about-title title">About</h2>
-          <p class="about-text">
-            Welcome to my page. My name is Elijah I'm 17 years old. I love
-            pretty much everything involving Math, Science, and Computer
-            Technology. I know how to use Photoshop, Premeiere pro, HTML, CSS,
-            JS, MERN Stack, C++, and Python.
-          </p>
-          <p class="about-text">
-            I love to learn new things and my goal is to become very effecient
-            at what I do. That involves making Websites, Programming and even
-            editing Photos/Videos. In my free time I like to read about
-            technology and Space topics, learn Calculus/Chemistry, or I might
-            tend to watch One Piece or play Overwatch!
-          </p>
-        </article>
-      </section>
-      <section class="main-projects">
-        <h2 class="about-title title">Projects</h2>
-        <article class="project-container">
+      <!-- About Section -->
 
+      <section class="about">
+        <header class="section-title">
+          <h2>About</h2>
+        </header>
+        <p class="about-text">
+          Welcome to my page. My name is Elijah I'm 18 years old. I love pretty
+          much everything involving Math, Science, and Computer Technology. I
+          know how to use Photoshop, Premeiere pro, HTML, CSS, JS, MERN Stack,
+          C++, and Python.
+        </p>
+        <p class="about-text">
+          I love to learn new things and my goal is to become very effecient at
+          what I do. That involves making Websites, Programming and even editing
+          Photos/Videos. In my free time I like to read about technology and
+          Space topics, learn Calculus/Chemistry, or I might tend to watch One
+          Piece or play Overwatch!
+        </p>
+      </section>
+      <!-- Project List Section -->
+      <section class="main-projects">
+        <header class="section-title">
+          <h2>Projects</h2>
+        </header>
+
+        <article class="project-container">
           <div class="project">
             <figure class="project-details">
               <img
@@ -56,10 +65,16 @@
                 alt="Spotify Clone Project"
               />
               <figcaption class="project-text">
-                <p>For this project I made a Spotify Clone using ReactJS (still in progress)</p>
-                <p>Site: <a href="https://CyberNotesDev.github.io/spotify-clone"
-                  >Spotify Clone</a
-                ></p>
+                <p>
+                  For this project I made a Spotify Clone using ReactJS (still
+                  in progress)
+                </p>
+                <p>
+                  Site:
+                  <a href="https://CyberNotesDev.github.io/spotify-clone"
+                    >Spotify Clone</a
+                  >
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -72,18 +87,37 @@
                 alt="A voting website for my acquaintance"
               />
               <figcaption class="project-text">
-                <p>In this project I made a voting site for my acquaintance using ReactJS (still in progress)</p>
-                <p>Site: <a href="https://cybernotesdev.github.io/carter/"
-                  >Carter</a
-                ></p>
+                <p>
+                  In this project I made a voting site for my acquaintance using
+                  ReactJS (still in progress)
+                </p>
+                <p>
+                  Site:
+                  <a href="https://cybernotesdev.github.io/carter/">Carter</a>
+                </p>
               </figcaption>
             </figure>
           </div>
-
         </article>
       </section>
+      <!-- Certification Section -->
+      <section class="certifications">
+        <header class="section-title">
+          <h2>Certifications</h2>
+        </header>
+        <div class="specific-certifications">
+          <details>
+            <summary>Certified HTML Developer</summary>
+            <p>I have fundemental knowledge of web development using HTML5! <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a></p>
+          </details>
+          <details>
+            <summary>CompTIA A+</summary>
+            <p>Currently studying</p>
+          </details>
+        </div>
+      </section>
     </main>
-
+    <!-- Footer -->
     <footer class="foot">
       <div class="foot-container">
         <p>
@@ -110,5 +144,6 @@
       </div>
     </footer>
   </body>
+
   <script src="js/year.js"></script>
 </html>
