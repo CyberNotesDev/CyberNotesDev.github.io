@@ -110,6 +110,7 @@ details > summary::marker {
 }
 
 details[open] {
+  transition: all 1.5s;
   width: 85%;
   max-width: 500px;
   height: auto;
@@ -127,7 +128,7 @@ details[open] > summary {
 
 details[open] > p {
   width: inherit;
-  height: auot;
+  height: auto;
   padding: 0.5rem;
   text-align: center;
 }

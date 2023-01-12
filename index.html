@@ -11,12 +11,6 @@
     <link rel="stylesheet" href="./css/other.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="shortcut icon" href="./images/favicon_io/favicon-16x16.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Patrick+Hand&display=swap"
-      rel="stylesheet"
-    />
     <title>Elijah Littell-Sivleys' Portfolio</title>
   </head>
 
@@ -31,13 +25,12 @@
     <!-- Main Content -->
     <main class="main">
       <!-- About Section -->
-
       <section class="about">
         <header class="section-title">
           <h2>About</h2>
         </header>
         <p class="about-text">
-          Welcome to my page. My name is Elijah I'm 18 years old. I love pretty
+          Welcome to my page. My name is Elijah I'm <span id="age"></span> years old. I love pretty
           much everything involving Math, Science, and Computer Technology. I
           know how to use Photoshop, Premeiere pro, HTML, CSS, JS, MERN Stack,
           C++, and Python.
@@ -46,8 +39,7 @@
           I love to learn new things and my goal is to become very effecient at
           what I do. That involves making Websites, Programming and even editing
           Photos/Videos. In my free time I like to read about technology and
-          Space topics, learn Calculus/Chemistry, or I might tend to watch One
-          Piece or play Overwatch!
+          Space topics, and learn Calculus/Chemistry.
         </p>
       </section>
       <!-- Project List Section -->
@@ -55,61 +47,61 @@
         <header class="section-title">
           <h2>Projects</h2>
         </header>
-        <div class="grid-projects">
+        <section class="grid-projects">
           <!-- First Project -->
           <article class="article">
             <header class="article-title">
               <h3>Spotify Clone</h3>
             </header>
-            <div>
+            <section>
               <p>This is a spotify clone I made in ReactJS</p>
               <a href="https://github.com/CyberNotesDev/spotify-clone"
                 >Check it out on Github!</a
               >
-            </div>
+            </section>
           </article>
           <!-- Second Project -->
           <article class="article">
             <header class="article-title">
               <h3>Youtube Clone</h3>
             </header>
-            <div>
+            <section>
               <p>This is a Youtube clone I made in ReactJS</p>
               <a href="https://github.com/CyberNotesDev/youtube"
                 >Check it out on Github!</a
               >
-            </div>
+            </section>
           </article>
           <article class="article">
             <header class="article-title">
               <h3>Carters Website</h3>
             </header>
-            <div>
+            <section>
               <p>Making a website for a buddie of mine in ReactJS!</p>
               <a href="https://github.com/CyberNotesDev/carter"
                 >Check it out on Github!</a
               >
-            </div>
+            </section>
           </article>
           <article class="article">
             <header class="article-title">
               <h3>Job inventory</h3>
             </header>
-            <div>
+            <section>
               <p>C++ program of my jobs pizza inventory!</p>
               <a href="https://github.com/CyberNotesDev/verbose-fiesta"
                 >Check it out on Github!</a
               >
-            </div>
+            </section>
           </article>
-        </div>
+        </section>
       </section>
       <!-- Certification Section -->
       <section class="certifications">
         <header class="section-title">
           <h2>Certifications</h2>
         </header>
-        <div class="specific-certifications">
+        <section class="specific-certifications">
           <details>
             <summary>Certified HTML Developer</summary>
             <p>I have fundemental knowledge of web development using HTML5!</p>
@@ -132,19 +124,19 @@
             <summary>CompTIA A+</summary>
             <p>Currently studying</p>
           </details>
-        </div>
+        </section>
       </section>
     </main>
     <!-- Footer -->
     <footer class="foot">
-      <div class="foot-container">
+      <section class="foot-container">
         <p>
           <span class="copyright">©</span> <span id="year"></span>
           <span class="title">CyberNotesDev</span>
         </p>
         <section class="foot-section">
           <h4 class="contact-title title">Contact me:</h4>
-          <div class="contact-links">
+          <nav class="contact-links">
             <a
               class="foot-links"
               href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/"
@@ -157,11 +149,11 @@
               >Instagram</a
             >
             <a class="foot-links" href="mailto:elittell214@gmail.com">Email</a>
-          </div>
+          </nav>
         </section>
-      </div>
+      </section>
     </footer>
   </body>
-
+  <script src="js/birthday.js"></script>
   <script src="js/year.js"></script>
 </html>
