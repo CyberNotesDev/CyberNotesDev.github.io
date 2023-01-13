@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I just love to learn new things!"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" href="./images/favicon_io/favicon-16x16.png" type="image/x-icon">
-    <title>Elijah Littell-Sivleys' Portfolio</title>
-  </head>
 
-  <body>
-    <!-- Main Content -->
-    <main class="main">
-      <section class="introduction">
-        <header class="header">
-          <h1 class="title">Elijah Littell-Sivley <span> - Junior Developer</span></h1>
-          <p class="title-description">I'm <span id="age"></span> years old and I'm a Frontend Web Developer</p>
-          
-          <div>
-            <button>
-              Learn more
-            </button>
-          </div>
-          
-        </header>
-      </section>
-      <!-- About Section
-      <section class="about">
-        <header class="section-title">
-          <h2>About</h2>
-        </header>
-        <p class="about-text">
-          Welcome to my page. My name is Elijah I'm <span id="age"></span> years old. I love pretty
-          much everything involving Math, Science, and Computer Technology. I
-          know how to use Photoshop, Premeiere pro, HTML, CSS, JS, MERN Stack,
-          C++, and Python.
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I just love to learn new things!" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="shortcut icon" href="./images/favicon_io/favicon-16x16.png" type="image/x-icon">
+  <title>Elijah Littell-Sivleys' Portfolio</title>
+</head>
+
+<body>
+  <!-- Main Content -->
+  <main class="main">
+    <section id="intro" class="introduction">
+      <header class="header">
+        <h1 class="title">Elijah Littell-Sivley <span> - Junior Developer</span></h1>
+        <p class="title-description">I'm <span id="age"></span> years old and I'm a Frontend Web Developer</p>
+
+        <button onclick="slide()">
+          Learn more
+        </button>
+
+      </header>
+    </section>
+
+    <section class="certifications">
+      <details>
+        <summary>Certified HTML Developer</summary>
+        <p>I have fundemental knowledge of web development using HTML5!</p>
+        <p>
+          <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
         </p>
-        <p class="about-text">
-          I love to learn new things and my goal is to become very effecient at
-          what I do. That involves making Websites, Programming and even editing
-          Photos/Videos. In my free time I like to read about technology and
-          Space topics, and learn Calculus/Chemistry.
+      </details>
+      <details>
+        <summary>Certified C++ Developer</summary>
+        <p>I have fundemental knowledge of programming using C++!</p>
+        <p>
+          <a href="https://verify.w3schools.com/1N4ZM6OAC7">W3Schools Certificate</a>
         </p>
+      </details>
+      <details>
+        <summary>CompTIA A+</summary>
+        <p>Currently studying</p>
+      </details>
+    </section>
+    <footer>
+      <section>
+        <p>
+          <span class="copyright">©</span> <span id="year"></span>
+          <span>CyberNotesDev</span>
+        </p>
+        <section>
+          <nav>
+            <a href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/">linkedin</a>
+            <a href="https://github.com/CyberNotesDev">Github</a>
+            <a href="https://instagram.com/CyberNotesDev">Instagram</a>
+            <a href="mailto:elittell214@gmail.com">Email</a>
+          </nav>
+        </section>
       </section>
-      Project List Section
-      <section class="projects">
-        <header class="section-title">
-          <h2>Projects</h2>
-        </header>
-        <section class="grid-projects">
+    </footer>
+  </main>
+  <!-- About Sectio
           First Project 
           <article class="article">
             <header class="article-title">
@@ -101,64 +113,17 @@
           </article>
         </section>
       </section>
-      Certification Section 
-      <section class="certifications">
-        <header class="section-title">
-          <h2>Certifications</h2>
-        </header>
-        <section class="specific-certifications">
-          <details>
-            <summary>Certified HTML Developer</summary>
-            <p>I have fundemental knowledge of web development using HTML5!</p>
-            <p>
-              <a href="https://verify.w3schools.com/1N3158UOT2"
-                >W3Schools Certificate</a
-              >
-            </p>
-          </details>
-          <details>
-            <summary>Certified C++ Developer</summary>
-            <p>I have fundemental knowledge of programming using C++!</p>
-            <p>
-              <a href="https://verify.w3schools.com/1N4ZM6OAC7"
-                >W3Schools Certificate</a
-              >
-            </p>
-          </details>
-          <details>
-            <summary>CompTIA A+</summary>
-            <p>Currently studying</p>
-          </details>
-        </section>
-      </section>
     </main>
     Footer 
-    <footer class="foot">
-      <section class="foot-container">
-        <p>
-          <span class="copyright">©</span> <span id="year"></span>
-          <span class="title">CyberNotesDev</span>
-        </p>
-        <section class="foot-section">
-          <h4 class="contact-title title">Contact me:</h4>
-          <nav class="contact-links">
-            <a
-              class="foot-links"
-              href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/"
-              >linkedin</a
-            >
-            <a class="foot-links" href="https://github.com/CyberNotesDev"
-              >Github</a
-            >
-            <a class="foot-links" href="https://instagram.com/CyberNotesDev"
-              >Instagram</a
-            >
-            <a class="foot-links" href="mailto:elittell214@gmail.com">Email</a>
-          </nav>
-        </section>
-      </section>
-    </footer> -->
-  </body>
-  <script src="js/birthday.js"></script>
-  <script src="js/year.js"></script>
+     -->
+</body>
+<script>
+  function slide() {
+    var certs = document.querySelector(".introduction");
+    certs.scrollIntoView();
+  }
+</script>
+<script src="js/birthday.js"></script>
+<script src="js/year.js"></script>
+
 </html>
