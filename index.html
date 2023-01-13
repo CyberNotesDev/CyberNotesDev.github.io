@@ -19,34 +19,64 @@
       <header class="header">
         <h1 class="title">Elijah Littell-Sivley <span> - Junior Developer</span></h1>
         <p class="title-description">I'm <span id="age"></span> years old and I'm a Frontend Web Developer</p>
-
         <button onclick="slide()">
           Learn more
         </button>
-
       </header>
     </section>
 
-    <section class="certifications">
-      <details>
-        <summary>Certified HTML Developer</summary>
-        <p>I have fundemental knowledge of web development using HTML5!</p>
-        <p>
-          <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
-        </p>
-      </details>
-      <details>
-        <summary>Certified C++ Developer</summary>
-        <p>I have fundemental knowledge of programming using C++!</p>
-        <p>
-          <a href="https://verify.w3schools.com/1N4ZM6OAC7">W3Schools Certificate</a>
-        </p>
-      </details>
-      <details>
-        <summary>CompTIA A+</summary>
-        <p>Currently studying</p>
-      </details>
+    <section id="certifications" class="certifications">
+      <section class="certificates">
+        <h2>My Certifications</h2>
+        <!-- CERTIFIED FRONTEND DEV -->
+        <details class="frontend-certification">
+          <summary>Certified Frontend Web Developer</summary>
+          <!-- CERTIFIED HTML DEV -->
+          <details>
+            <summary>Certified HTML Developer</summary>
+            <p>I have fundemental knowledge of web development using HTML5!</p>
+            <p>
+              <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+            </p>
+          </details>
+          <!-- CERTIFIED CSS DEV -->
+          <details>
+            <summary>Certified CSS Developer</summary>
+            <p>I have fundemental knowledge of web development using HTML5!</p>
+            <p>
+              <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+            </p>
+          </details>
+          <!-- CERTIFIED JS DEV -->
+          <details>
+            <summary>Certified Javascript Developer</summary>
+            <p>I have fundemental knowledge of web development using HTML5!</p>
+            <p>
+              <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+            </p>
+          </details>
+        </details>
+        <!-- CERTIFIED C++ DEV -->
+        <details>
+          <summary>Certified C++ Developer</summary>
+          <p>I have fundemental knowledge of programming using C++!</p>
+          <p>
+            <a href="https://verify.w3schools.com/1N4ZM6OAC7">W3Schools Certificate</a>
+          </p>
+        </details>
+        <!-- CERTIFIED IN A+ -->
+        <details>
+          <summary>CompTIA A+</summary>
+          <p>Currently studying</p>
+        </details>
+      </section>
     </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+    </section>
+
     <footer>
       <section>
         <p>
@@ -64,64 +94,19 @@
       </section>
     </footer>
   </main>
-  <!-- About Sectio
-          First Project 
-          <article class="article">
-            <header class="article-title">
-              <h3>Spotify Clone</h3>
-            </header>
-            <section>
-              <p>This is a spotify clone I made in ReactJS</p>
-              <a href="https://github.com/CyberNotesDev/spotify-clone"
-                >Check it out on Github!</a
-              >
-            </section>
-          </article>
-           Second Project 
-          <article class="article">
-            <header class="article-title">
-              <h3>Youtube Clone</h3>
-            </header>
-            <section>
-              <p>This is a Youtube clone I made in ReactJS</p>
-              <a href="https://github.com/CyberNotesDev/youtube"
-                >Check it out on Github!</a
-              >
-            </section>
-          </article>
-          <article class="article">
-            <header class="article-title">
-              <h3>Carters Website</h3>
-            </header>
-            <section>
-              <p>Making a website for a buddie of mine in ReactJS!</p>
-              <a href="https://github.com/CyberNotesDev/carter"
-                >Check it out on Github!</a
-              >
-            </section>
-          </article>
-          <article class="article">
-            <header class="article-title">
-              <h3>Job inventory</h3>
-            </header>
-            <section>
-              <p>C++ program of my jobs pizza inventory!</p>
-              <a href="https://github.com/CyberNotesDev/verbose-fiesta"
-                >Check it out on Github!</a
-              >
-            </section>
-          </article>
-        </section>
-      </section>
-    </main>
-    Footer 
-     -->
+
 </body>
 <script>
   function slide() {
-    var certs = document.querySelector(".introduction");
-    certs.scrollIntoView();
+    let certificationSectionScrollHeight = document.getElementById("certifications").scrollHeight - 10;
+    // Scrolls to the top of the section smoothly
+    scrollTo({
+      top: certificationSectionScrollHeight,
+      behavior: "smooth"
+    });
   }
+
+  console.log("Hello! How are you doing today, so you care what my code looks like?");
 </script>
 <script src="js/birthday.js"></script>
 <script src="js/year.js"></script>
