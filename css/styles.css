@@ -81,7 +81,7 @@ button {
   color: var(--blue-color);
 }
 
-.certifications h2 {
+.certifications h2, .projects h2 {
   color: var(--blue-color);
   text-align: center;
 }
@@ -119,6 +119,25 @@ summary::marker {
 
 .certificates p {
   margin-left: 35px;
+}
+
+/* PROJECTS */
+.projects {
+  min-height: 100vh;
+}
+
+.projects-gallary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
+
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+img {
+  width: 150px;
 }
 
 /* ANIMATIONS */

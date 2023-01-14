@@ -74,7 +74,28 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="projects">
-      <h2>My Projects</h2>
+      <h2 class="project-title">My Projects</h2>
+      <section class="projects-gallary">
+        <figure>
+          <img class="first" src="./images/test.jpg" alt="Test">
+        </figure>
+        <figure>
+          <img src="./images/test.jpg" alt="Test">
+
+        </figure>
+        <figure>
+          <img src="./images/test.jpg" alt="Test">
+
+        </figure>
+        <figure>
+          <img src="./images/test.jpg" alt="Test">
+
+        </figure>
+        <figure>
+          <img src="./images/test.jpg" alt="Test">
+
+        </figure>
+      </section>
     </section>
 
     <footer>
@@ -97,6 +118,22 @@
 
 </body>
 <script>
+
+  let alreadyChecked = false
+  document.addEventListener("scroll", () => {
+    let heading = document.querySelector(".projects h2");
+
+    console.log(document.scrollingElement.scrollTop);
+    if (document.scrollingElement.scrollTop > 800 && !alreadyChecked) {
+      alreadyChecked = true;
+
+      heading.animate([
+        {opacity: 0},
+        {opacity: 0.5}
+      ], {duration: 1500});
+    }
+  });
+
   function slide() {
     let certificationSectionScrollHeight = document.getElementById("certifications").scrollHeight - 10;
     // Scrolls to the top of the section smoothly
