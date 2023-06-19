@@ -6,164 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I just love to learn new things!"
-    />
-    <link rel="stylesheet" href="./css/other.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="shortcut icon" href="./images/favicon_io/favicon-16x16.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Patrick+Hand&display=swap"
-      rel="stylesheet"
-    />
+      content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I love to learn new things!" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Elijah Littell-Sivleys' Portfolio</title>
   </head>
-
   <body>
     <!-- Header -->
     <header class="header">
-      <h1 class="title">
-        Elijah Littell-Sivley <span> - Junior Developer</span>
-      </h1>
+      <h1 class="header-title">Elijah Littell-Sivley <span> - Junior Developer</span></h1>
+      <p class="header-description">I'm a Frontend Web Developer</p>
+      <button onclick="slide()">Learn more</button>
     </header>
-
     <!-- Main Content -->
     <main class="main">
-      <!-- About Section -->
+      <!-- About Me -->
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <section class="about-content">
+          <p>I'm <span class="age"></span> years old and I reside in Michigan. Im attending KVCC, summer of 2024 to major in Computer Science and a minor in Chemistry.</p>
+          <p>I'm a Junior Web Developer that knows HTML5/CSS/JS, ReactJS, ReactNative, Qt, and C++, Python. Some others things that I have experience with is Adobe Photoshop, Adobe XD, Adobe Illustrator, and Adobe Premier Pro.</p>
+          <p>
+            In my free time I love to learn advance chemistry, and mathamatics. My
+            favorite personal project is programming an arduino to use the LCD library!
+          </p>
+          <section class="links">
+            <nav class="links-content">
+              <a href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/"><img src="./images/Icon awesome-linkedin.png" /></a>
+              <a href="https://github.com/CyberNotesDev"><img src="./images/Icon awesome-github-square.png" /></a>
+              <a href="https://instagram.com/CyberNotesDev"><img src="./images/Icon awesome-instagram.png" /></a>
+            </nav>
+          </section>
+        </section>
+      </section>
 
-      <section class="about">
-        <header class="section-title">
-          <h2>About</h2>
-        </header>
-        <p class="about-text">
-          Welcome to my page. My name is Elijah I'm 18 years old. I love pretty
-          much everything involving Math, Science, and Computer Technology. I
-          know how to use Photoshop, Premeiere pro, HTML, CSS, JS, MERN Stack,
-          C++, and Python.
-        </p>
-        <p class="about-text">
-          I love to learn new things and my goal is to become very effecient at
-          what I do. That involves making Websites, Programming and even editing
-          Photos/Videos. In my free time I like to read about technology and
-          Space topics, learn Calculus/Chemistry, or I might tend to watch One
-          Piece or play Overwatch!
-        </p>
-      </section>
-      <!-- Project List Section -->
-      <section class="projects">
-        <header class="section-title">
-          <h2>Projects</h2>
-        </header>
-        <div class="grid-projects">
-          <!-- First Project -->
-          <article class="article">
-            <header class="article-title">
-              <h3>Spotify Clone</h3>
-            </header>
-            <div>
-              <p>This is a spotify clone I made in ReactJS</p>
-              <a href="https://github.com/CyberNotesDev/spotify-clone"
-                >Check it out on Github!</a
-              >
-            </div>
-          </article>
-          <!-- Second Project -->
-          <article class="article">
-            <header class="article-title">
-              <h3>Youtube Clone</h3>
-            </header>
-            <div>
-              <p>This is a Youtube clone I made in ReactJS</p>
-              <a href="https://github.com/CyberNotesDev/youtube"
-                >Check it out on Github!</a
-              >
-            </div>
-          </article>
-          <article class="article">
-            <header class="article-title">
-              <h3>Carters Website</h3>
-            </header>
-            <div>
-              <p>Making a website for a buddie of mine in ReactJS!</p>
-              <a href="https://github.com/CyberNotesDev/carter"
-                >Check it out on Github!</a
-              >
-            </div>
-          </article>
-          <article class="article">
-            <header class="article-title">
-              <h3>Job inventory</h3>
-            </header>
-            <div>
-              <p>C++ program of my jobs pizza inventory!</p>
-              <a href="https://github.com/CyberNotesDev/verbose-fiesta"
-                >Check it out on Github!</a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
-      <!-- Certification Section -->
-      <section class="certifications">
-        <header class="section-title">
-          <h2>Certifications</h2>
-        </header>
-        <div class="specific-certifications">
-          <details>
-            <summary>Certified HTML Developer</summary>
-            <p>I have fundemental knowledge of web development using HTML5!</p>
-            <p>
-              <a href="https://verify.w3schools.com/1N3158UOT2"
-                >W3Schools Certificate</a
-              >
-            </p>
+      <!-- Certs -->
+      <section id="certifications" class="certifications">
+        <section class="certificates">
+          <h2>My Certifications</h2>
+          <!-- CERTIFIED FRONTEND DEV -->
+          <details class="frontend-certification">
+            <summary>Certified Frontend Web Developer</summary>
+            <!-- CERTIFIED HTML DEV -->
+            <details>
+              <summary>Certified HTML Developer</summary>
+              <p>I have fundemental knowledge of web development using HTML5!</p>
+              <p>
+                <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+              </p>
+            </details>
+            <!-- CERTIFIED CSS DEV -->
+            <details>
+              <summary>Certified CSS Developer</summary>
+              <p>I have fundemental knowledge of web development using HTML5!</p>
+              <p>
+                <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+              </p>
+            </details>
+            <!-- CERTIFIED JS DEV -->
+            <details>
+              <summary>Certified Javascript Developer</summary>
+              <p>I have fundemental knowledge of web development using HTML5!</p>
+              <p>
+                <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+              </p>
+            </details>
           </details>
+          <!-- CERTIFIED C++ DEV -->
           <details>
             <summary>Certified C++ Developer</summary>
             <p>I have fundemental knowledge of programming using C++!</p>
             <p>
-              <a href="https://verify.w3schools.com/1N4ZM6OAC7"
-                >W3Schools Certificate</a
-              >
+              <a href="https://verify.w3schools.com/1N4ZM6OAC7">W3Schools Certificate</a>
             </p>
           </details>
+          <!-- CERTIFIED IN A+ -->
           <details>
             <summary>CompTIA A+</summary>
             <p>Currently studying</p>
           </details>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="foot">
-      <div class="foot-container">
-        <p>
-          <span class="copyright">©</span> <span id="year"></span>
-          <span class="title">CyberNotesDev</span>
-        </p>
-        <section class="foot-section">
-          <h4 class="contact-title title">Contact me:</h4>
-          <div class="contact-links">
-            <a
-              class="foot-links"
-              href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/"
-              >linkedin</a
-            >
-            <a class="foot-links" href="https://github.com/CyberNotesDev"
-              >Github</a
-            >
-            <a class="foot-links" href="https://instagram.com/CyberNotesDev"
-              >Instagram</a
-            >
-            <a class="foot-links" href="mailto:elittell214@gmail.com">Email</a>
-          </div>
         </section>
+<<<<<<< HEAD
       </div>
     </footer>
   </body>
   <script>
     alert("I'm currently working on a redesign to express myself! (Better layout, added animations, etc!) Thank you.");
   </script>
+=======
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects">
+        <h2 class="project-title">My Projects</h2>
+        <section class="projects-gallary">
+          <article>
+            <p class="hide">My first ever client is a website that I made for a friend of a friend. I used ReactJS for the application and I had to connect Frontend to Backend for Google Authorization that was implimented. <a href="#">NeekyByNails</a></p>
+            <button onclick="readMoreButton(this)">Read More</button>
+          </article>
+        </section>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <section>
+          <p>
+            <span class="copyright">©</span> <span id="year"></span>
+            <span>CyberNotesDev</span>
+          </p>
+        </section>
+      </footer>
+    </main>
+  </body>
+  <script>
+    function slide() {
+      let certificationSectionScrollHeight = document.getElementById("certifications").scrollHeight + 750;
+      setTimeout(() => {
+        scrollTo({
+          top: certificationSectionScrollHeight,
+          behavior: "smooth",
+        });
+      }, 500);
+    }
+
+    function readMoreButton(element) {
+      const paraText = element.previousElementSibling;
+      paraText.className = paraText.className === "hide" ? "show" : "hide";
+    }
+
+    console.log(
+      "Hello! How are you doing today? :)\nSo... Why are you looking at my beautiful code?!\nIt's my precious sancturary! >:(\nNah I'm kidding, take a look! And maybe txt me what you think about it or how I can improve :D"
+    );
+  </script>
+  <script src="js/birthday.js"></script>
+>>>>>>> resdesign
   <script src="js/year.js"></script>
 </html>
