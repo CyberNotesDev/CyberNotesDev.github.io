@@ -8,6 +8,15 @@
   box-sizing: border-box;
 }
 
+a {
+  color: var(--pink-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   background-color: #4a536b;
   font-family: Arial, Helvetica, sans-serif;
@@ -17,44 +26,35 @@ body {
   padding: 0;
 }
 
-a {
-  color: var(--blue-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* HEADER */
+/* Header */
 
 .header {
-  border-top: 3px solid var(--white-color);
-}
-
-.introduction {
+  background-image: url("./../images/Web\ 1920\ –\ 1.png");
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
 
   min-height: 100vh;
 }
 
-.title {
-  font-size: 42px;
+.header-title {
   color: var(--blue-color);
+  font-size: 42px;
+  text-align: center;
 }
 
-.title span {
+.header-title span {
   color: var(--pink-color);
 }
 
-.title-description {
+.header-description {
+  margin-top: 0;
   font-size: 26px;
   color: var(--white-color);
 }
 
-button {
+.header button {
   background-color: #4a536b;
   border-image: linear-gradient(45deg, var(--blue-color), #64929f) 1 / 3px;
   color: var(--white-color);
@@ -63,33 +63,35 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.header button:hover {
   border-image: linear-gradient(200deg, var(--blue-color), #537983) 1 / 3px;
 }
 
-.header,
-.title,
-.title-description,
-button {
+.header {
+  animation: backgroundFade 2500ms ease-in;
+}
+
+.header-title,
+.header-description,
+.header button {
   animation: intro 1500ms ease-in;
 }
 
-/* CERTIFICATIONS */
+/* Main */
 
 .certifications {
-  min-height: 100vh;
   color: var(--blue-color);
 }
 
-.certifications h2, .projects h2 {
+.certifications h2,
+.projects h2 {
   color: var(--blue-color);
   text-align: center;
 }
 
 .certificates {
   color: var(--white-color);
-  border-top: 3px solid var(--white-color);
-  max-width: 860px;
+  max-width: 360px;
   margin: 0 auto;
   column-gap: 2rem;
   row-gap: 1rem;
@@ -114,34 +116,96 @@ summary::marker {
 
 .certificates details summary {
   margin-left: 10px;
-  color: var(--blue-color);
+  color: var(--white-color-);
 }
 
 .certificates p {
   margin-left: 35px;
 }
 
-/* PROJECTS */
-.projects {
-  border-top: 3px solid var(--white-color);
-  min-height: 100vh;
-  max-width: 960px;
+/* projects */
+section.projects-gallary {
+  display: flex;
+  justify-content: center;
+}
+section.projects-gallary article {
+  width: 300px;
+}
+
+section.projects-gallary article p {
+  color: white;
+}
+
+section.projects-gallary article p.hide{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+section.projects-gallary article p.show {
+  overflow: none;
+  white-space: pre-wrap;
+}
+
+section.projects-gallary article button {
+  background-color: transparent;
+  border: none;
+  color: var(--pink-color);
+  display: inline;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+
+}
+
+section.projects-gallary article button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* About */
+.about, .certifications, .projects {
+  margin-bottom: 50px;;
+}
+.about h2 {
+  text-align: center;
+  color: var(--blue-color);
+}
+.about p {
+  text-align: center;
+  color: var(--white-color);
+}
+
+.about-content {
+  width: 50%;
   margin: 0 auto;
 }
 
-.projects-gallary {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
-  gap: 1rem;
-
+.links {
+  display: flex;
+  justify-content: center;
 }
 
-img {
-  width: 150px;
+.links-content img {
+  width: 35px;
+  margin-right: 10px;
 }
 
-/* ANIMATIONS */
+footer {
+  color: white;
+  text-align: center;
+}
+
+/* Animations */
+
+@keyframes backgroundFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @keyframes intro {
   from {

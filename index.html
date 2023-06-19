@@ -1,151 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I just love to learn new things!" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="shortcut icon" href="./images/favicon_io/favicon-16x16.png" type="image/x-icon">
-  <title>Elijah Littell-Sivleys' Portfolio</title>
-</head>
-
-<body>
-  <!-- Main Content -->
-  <main class="main">
-    <section id="intro" class="introduction">
-      <header class="header">
-        <h1 class="title">Elijah Littell-Sivley <span> - Junior Developer</span></h1>
-        <p class="title-description">I'm <span id="age"></span> years old and I'm a Frontend Web Developer</p>
-        <button onclick="slide()">
-          Learn more
-        </button>
-      </header>
-    </section>
-
-    <section id="certifications" class="certifications">
-      <section class="certificates">
-        <h2>My Certifications</h2>
-        <!-- CERTIFIED FRONTEND DEV -->
-        <details class="frontend-certification">
-          <summary>Certified Frontend Web Developer</summary>
-          <!-- CERTIFIED HTML DEV -->
-          <details>
-            <summary>Certified HTML Developer</summary>
-            <p>I have fundemental knowledge of web development using HTML5!</p>
-            <p>
-              <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
-            </p>
-          </details>
-          <!-- CERTIFIED CSS DEV -->
-          <details>
-            <summary>Certified CSS Developer</summary>
-            <p>I have fundemental knowledge of web development using HTML5!</p>
-            <p>
-              <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
-            </p>
-          </details>
-          <!-- CERTIFIED JS DEV -->
-          <details>
-            <summary>Certified Javascript Developer</summary>
-            <p>I have fundemental knowledge of web development using HTML5!</p>
-            <p>
-              <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
-            </p>
-          </details>
-        </details>
-        <!-- CERTIFIED C++ DEV -->
-        <details>
-          <summary>Certified C++ Developer</summary>
-          <p>I have fundemental knowledge of programming using C++!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to my page, my name is Elijah Littell-Sivley and this is my portfolio. I like to program, edit photos/videos on Photoshop and Premiere pro. I love to learn new things!" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Elijah Littell-Sivleys' Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header-title">Elijah Littell-Sivley <span> - Junior Developer</span></h1>
+      <p class="header-description">I'm a Frontend Web Developer</p>
+      <button onclick="slide()">Learn more</button>
+    </header>
+    <!-- Main Content -->
+    <main class="main">
+      <!-- About Me -->
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <section class="about-content">
+          <p>I'm <span class="age"></span> years old and I reside in Michigan. Im attending KVCC, summer of 2024 to major in Computer Science and a minor in Chemistry.</p>
+          <p>I'm a Junior Web Developer that knows HTML5/CSS/JS, ReactJS, ReactNative, Qt, and C++, Python. Some others things that I have experience with is Adobe Photoshop, Adobe XD, Adobe Illustrator, and Adobe Premier Pro.</p>
           <p>
-            <a href="https://verify.w3schools.com/1N4ZM6OAC7">W3Schools Certificate</a>
+            In my free time I love to learn advance chemistry, and mathamatics. My
+            favorite personal project is programming an arduino to use the LCD library!
           </p>
-        </details>
-        <!-- CERTIFIED IN A+ -->
-        <details>
-          <summary>CompTIA A+</summary>
-          <p>Currently studying</p>
-        </details>
-      </section>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-      <h2 class="project-title">My Projects</h2>
-      <section class="projects-gallary">
-        <figure>
-          <img class="first" src="./images/test.jpg" alt="Test">
-        </figure>
-        <figure>
-          <img src="./images/test.jpg" alt="Test">
-
-        </figure>
-        <figure>
-          <img src="./images/test.jpg" alt="Test">
-
-        </figure>
-        <figure>
-          <img src="./images/test.jpg" alt="Test">
-
-        </figure>
-        <figure>
-          <img src="./images/test.jpg" alt="Test">
-
-        </figure>
-      </section>
-    </section>
-
-    <footer>
-      <section>
-        <p>
-          <span class="copyright">©</span> <span id="year"></span>
-          <span>CyberNotesDev</span>
-        </p>
-        <section>
-          <nav>
-            <a href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/">linkedin</a>
-            <a href="https://github.com/CyberNotesDev">Github</a>
-            <a href="https://instagram.com/CyberNotesDev">Instagram</a>
-            <a href="mailto:elittell214@gmail.com">Email</a>
-          </nav>
+          <section class="links">
+            <nav class="links-content">
+              <a href="https://www.linkedin.com/in/elijah-littell-sivley-3194b21a7/"><img src="./images/Icon awesome-linkedin.png" /></a>
+              <a href="https://github.com/CyberNotesDev"><img src="./images/Icon awesome-github-square.png" /></a>
+              <a href="https://instagram.com/CyberNotesDev"><img src="./images/Icon awesome-instagram.png" /></a>
+            </nav>
+          </section>
         </section>
       </section>
-    </footer>
-  </main>
 
-</body>
-<script>
+      <!-- Certs -->
+      <section id="certifications" class="certifications">
+        <section class="certificates">
+          <h2>My Certifications</h2>
+          <!-- CERTIFIED FRONTEND DEV -->
+          <details class="frontend-certification">
+            <summary>Certified Frontend Web Developer</summary>
+            <!-- CERTIFIED HTML DEV -->
+            <details>
+              <summary>Certified HTML Developer</summary>
+              <p>I have fundemental knowledge of web development using HTML5!</p>
+              <p>
+                <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+              </p>
+            </details>
+            <!-- CERTIFIED CSS DEV -->
+            <details>
+              <summary>Certified CSS Developer</summary>
+              <p>I have fundemental knowledge of web development using HTML5!</p>
+              <p>
+                <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+              </p>
+            </details>
+            <!-- CERTIFIED JS DEV -->
+            <details>
+              <summary>Certified Javascript Developer</summary>
+              <p>I have fundemental knowledge of web development using HTML5!</p>
+              <p>
+                <a href="https://verify.w3schools.com/1N3158UOT2">W3Schools Certificate</a>
+              </p>
+            </details>
+          </details>
+          <!-- CERTIFIED C++ DEV -->
+          <details>
+            <summary>Certified C++ Developer</summary>
+            <p>I have fundemental knowledge of programming using C++!</p>
+            <p>
+              <a href="https://verify.w3schools.com/1N4ZM6OAC7">W3Schools Certificate</a>
+            </p>
+          </details>
+          <!-- CERTIFIED IN A+ -->
+          <details>
+            <summary>CompTIA A+</summary>
+            <p>Currently studying</p>
+          </details>
+        </section>
+      </section>
 
-  let alreadyChecked = false
-  document.addEventListener("scroll", () => {
-    let heading = document.querySelector(".projects h2");
+      <!-- Projects -->
+      <section id="projects" class="projects">
+        <h2 class="project-title">My Projects</h2>
+        <section class="projects-gallary">
+          <article>
+            <p class="hide">My first ever client is a website that I made for a friend of a friend. I used ReactJS for the application and I had to connect Frontend to Backend for Google Authorization that was implimented. <a href="#">NeekyByNails</a></p>
+            <button onclick="readMoreButton(this)">Read More</button>
+          </article>
+        </section>
+      </section>
 
-    console.log(document.scrollingElement.scrollTop);
-    if (document.scrollingElement.scrollTop > 800 && !alreadyChecked) {
-      alreadyChecked = true;
-
-      heading.animate([
-        {opacity: 0},
-        {opacity: 0.5}
-      ], {duration: 1500});
+      <!-- Footer -->
+      <footer>
+        <section>
+          <p>
+            <span class="copyright">©</span> <span id="year"></span>
+            <span>CyberNotesDev</span>
+          </p>
+        </section>
+      </footer>
+    </main>
+  </body>
+  <script>
+    function slide() {
+      let certificationSectionScrollHeight = document.getElementById("certifications").scrollHeight + 750;
+      setTimeout(() => {
+        scrollTo({
+          top: certificationSectionScrollHeight,
+          behavior: "smooth",
+        });
+      }, 500);
     }
-  });
 
-  function slide() {
-    let certificationSectionScrollHeight = document.getElementById("certifications").scrollHeight - 10;
-    // Scrolls to the top of the section smoothly
-    scrollTo({
-      top: certificationSectionScrollHeight,
-      behavior: "smooth"
-    });
-  }
+    function readMoreButton(element) {
+      const paraText = element.previousElementSibling;
+      paraText.className = paraText.className === "hide" ? "show" : "hide";
+    }
 
-  console.log("Hello! How are you doing today, so you care what my code looks like?");
-</script>
-<script src="js/birthday.js"></script>
-<script src="js/year.js"></script>
-
+    console.log(
+      "Hello! How are you doing today? :)\nSo... Why are you looking at my beautiful code?!\nIt's my precious sancturary! >:(\nNah I'm kidding, take a look! And maybe txt me what you think about it or how I can improve :D"
+    );
+  </script>
+  <script src="js/birthday.js"></script>
+  <script src="js/year.js"></script>
 </html>
