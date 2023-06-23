@@ -24,10 +24,10 @@
         <h2>About Me</h2>
         <section class="about-content">
           <p>I'm <span class="age"></span> years old and I reside in Michigan. I'm attending KVCC, summer of 2024 to major in Computer Science and a minor in Chemistry.</p>
-          <p>I'm a Junior Web Developer that knows HTML5/CSS/JS, ReactJS, ReactNative, Qt, and C++, Python. Some others things that I have experience with is Adobe Photoshop, Adobe XD, Adobe Illustrator, and Adobe Premier Pro.</p>
+          <p>I'm a Junior Web Developer that knows HTML5/CSS/JS, ReactJS, ReactNative, Qt, C++, and Python. Some others things that I have experience with is Adobe Photoshop, Adobe XD, Adobe Illustrator, and Adobe Premier Pro.</p>
           <p>
             In my free time I love to learn advance chemistry, and mathamatics. My
-            favorite personal project is programming an arduino to use the LCD library!
+            favorite personal project is programming an Arduino to use the LCD library!
           </p>
           <section class="links">
             <nav class="links-content">
@@ -110,8 +110,13 @@
     </main>
   </body>
   <script>
+
     function slide() {
-      let certificationSectionScrollHeight = document.getElementById("certifications").scrollHeight + 750;
+      let top = 750;
+      if (navigator.userAgentData.mobile) {
+        top = 600;
+      }
+      let certificationSectionScrollHeight = document.getElementById("certifications").scrollHeight + top;
       setTimeout(() => {
         scrollTo({
           top: certificationSectionScrollHeight,
@@ -123,6 +128,7 @@
     function readMoreButton(element) {
       const paraText = element.previousElementSibling;
       paraText.className = paraText.className === "hide" ? "show" : "hide";
+      element.innerHTML = element.innerHTML === "Read More" ? "Show Less" : "Read More";
     }
 
     console.log(
